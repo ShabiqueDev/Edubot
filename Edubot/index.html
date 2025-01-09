@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASTRO-Edu Co</title>
+    <link rel="icon"href="ASTRO.png"/>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Chat Header -->
+        <div class="chat-header">
+            <!-- Profile Picture -->
+            <img src="ASTRO.png" alt="Profile Picture" class="profile-pic">
+            <!-- Chat Title -->
+            <h1>ASTRO-Edu Co</h1>
+            <!-- Restart Button -->
+            <button class="restart-button" onclick="restartChat()">Restart</button>
+        </div>
+        
+        <!-- Chat Messages -->
+        <div class="chat-messages" id="chat-messages">
+            <!-- Messages will be displayed here -->
+        </div>
+        
+        <!-- Chat Input -->
+        <div class="chat-input">
+            <!-- User Input Field -->
+            <input type="text" id="user-input" placeholder="Type a message..." />
+            <!-- Send Button -->
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

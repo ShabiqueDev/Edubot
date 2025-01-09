@@ -1,0 +1,154 @@
+/* Reset default styling for all elements */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Styling for the body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set full height of viewport */
+    background-color: #f1f5f8; /* Light grey background */
+}
+
+/* Styling for the chat container */
+.chat-container {
+    width: 90%;
+    max-width: 400px; /* Maximum width for the chat container */
+    height: 600px; /* Set fixed height for shorter screen */
+    border-radius: 15px;
+    background: linear-gradient(135deg, #ffffff 0%, #d4e8f1 100%); /* Gradient background */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    overflow: hidden; /* Hide overflowing content */
+    display: flex;
+    flex-direction: column; /* Arrange child elements vertically */
+}
+
+/* Styling for the chat header */
+.chat-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1a73e8; /* Blue background */
+    color: #ffffff; /* White text color */
+    padding: 15px;
+    font-size: 20px;
+    border-top-left-radius: 15px; /* Rounded corners */
+    border-top-right-radius: 15px;
+}
+
+/* Styling for the chat title */
+.chat-header h1 {
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+/* Styling for the profile picture */
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Circular profile picture */
+}
+
+/* Styling for the restart button */
+.restart-button {
+    background-color: #0c47a1; /* Dark blue background */
+    color: #ffffff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+/* Hover effect for the restart button */
+.restart-button:hover {
+    background-color: #0a3a8b; /* Darker blue on hover */
+}
+
+/* Styling for the chat messages container */
+.chat-messages {
+    flex-grow: 1; /* Allow chat messages to grow and occupy remaining space */
+    padding: 20px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    border-top: 1px solid #1a73e8; /* Blue top border */
+    border-bottom: 1px solid #1a73e8; /* Blue bottom border */
+}
+
+/* Styling for the chat input section */
+.chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #1a73e8; /* Blue top border */
+}
+
+/* Styling for the user input field */
+.chat-input input {
+    flex-grow: 1; /* Allow input field to grow and occupy remaining space */
+    padding: 12px;
+    border: 1px solid #1a73e8; /* Blue border */
+    border-radius: 10px; /* Rounded corners */
+    margin-right: 10px;
+}
+
+/* Styling for the send button */
+.chat-input button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px; /* Rounded corners */
+    background-color: #1a73e8; /* Blue background */
+    color: #ffffff; /* White text color */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+/* Hover effect for the send button */
+.chat-input button:hover {
+    background-color: #0c47a1; /* Darker blue on hover */
+}
+
+/* Styling for chat messages */
+.message {
+    display: flex;
+    align-items: flex-start; /* Align messages at the start */
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 15px; /* Rounded corners */
+    max-width: 75%; /* Maximum width for messages */
+}
+
+/* Styling for bot messages */
+.message.bot {
+    background-color: #e3f2fd; /* Light blue background */
+    border: 1px solid #1a73e8; /* Blue border */
+}
+
+/* Styling for user messages */
+.message.user {
+    background-color: #1a73e8; /* Blue background */
+    color: #ffffff; /* White text color */
+    align-self: flex-end; /* Align user messages to the right */
+    flex-direction: row-reverse; /* Reverse message direction for user */
+}
+
+/* Styling for profile picture within messages */
+.message .profile-pic {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px; /* Margin for bot messages */
+}
+
+/* Additional styling for user's profile picture */
+.message.user .profile-pic {
+    margin-left: 10px; /* Margin for user messages */
+    margin-right: 0;
+}
+
+/* Styling for message content */
+.message-content {
+    flex-grow: 1; /* Allow message content to grow and occupy remaining space */
+}
